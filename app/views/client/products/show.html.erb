@@ -1,0 +1,10 @@
+<h1><%= @product["title"] %></h1> 
+<h3>Name: <%= @product["name"] %></h3>
+<h4>Price: <%= @product["price"] %></h4>
+<h4>Description: </h4>
+  <ul>
+    <%= @product["formatted"]["description"].each do |description| %>
+      <li><%= description %></li>
+      <% end %>
+  </ul>
+<h4>Supplier Id: <%= @product["supplier_id"] %></h4>
